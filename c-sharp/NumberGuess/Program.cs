@@ -8,13 +8,13 @@ class Game
         Console.WriteLine("<o>--------Number Guess Game--------<o>");
 
         Random random = new Random();
-        int secretNumber = random.Next(1, 334); // Picks a number between 1 to 333
+        int secretNumber = random.Next(1, 112); // Picks a number between 1 to 111
         int guess = 0;
         int attempts = 0;
 
         while (guess != secretNumber)
         {
-            Console.Write("Guess between the numbers 1 to 333: ");
+            Console.Write("Guess between the numbers 1 to 111: ");
             guess = int.Parse(Console.ReadLine());
             attempts++; // Sums the attempts taking to guess the number
 
