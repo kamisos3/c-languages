@@ -1,4 +1,4 @@
-# C, C# and C++
+# C# and C++
 
 ▶ Introduction
 
