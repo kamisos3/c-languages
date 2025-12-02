@@ -20,7 +20,7 @@ class Game
             Console.Write("Choose: ");
 
             if (!int.TryParse(Console.ReadLine(), out int input) || input == 4)
-                break;
+                break; // Quits game when input is 4
 
             Choice player = (Choice)(input - 1);
             Choice computer = (Choice)random.Next(3);
@@ -29,7 +29,7 @@ class Game
             DetermineWinner(player, computer);
         }
 
-        Console.WriteLine($"\nFinal Score - You: {playerScore} | Computer: {computerScore}");
+        Console.WriteLine($"\nFinal Score - You: {playerScore} | Computer: {computerScore}"); // Gives score total after game is quitted
     }
 
     void DetermineWinner(Choice player, Choice computer)
