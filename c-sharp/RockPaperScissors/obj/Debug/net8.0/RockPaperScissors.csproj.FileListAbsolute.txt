@@ -1,0 +1,15 @@
+/home/doddy/c-languages/c-sharp/RockPaperScissors/obj/Debug/net8.0/RockPaperScissors.GeneratedMSBuildEditorConfig.editorconfig
+/home/doddy/c-languages/c-sharp/RockPaperScissors/obj/Debug/net8.0/RockPaperScissors.AssemblyInfoInputs.cache
+/home/doddy/c-languages/c-sharp/RockPaperScissors/obj/Debug/net8.0/RockPaperScissors.AssemblyInfo.cs
+/home/doddy/c-languages/c-sharp/RockPaperScissors/obj/Debug/net8.0/RockPaperScissors.csproj.CoreCompileInputs.cache
+/home/doddy/c-languages/c-sharp/RockPaperScissors/obj/Debug/net8.0/RockPaperScissors.sourcelink.json
+/home/doddy/c-languages/c-sharp/RockPaperScissors/bin/Debug/net8.0/RockPaperScissors
+/home/doddy/c-languages/c-sharp/RockPaperScissors/bin/Debug/net8.0/RockPaperScissors.deps.json
+/home/doddy/c-languages/c-sharp/RockPaperScissors/bin/Debug/net8.0/RockPaperScissors.runtimeconfig.json
+/home/doddy/c-languages/c-sharp/RockPaperScissors/bin/Debug/net8.0/RockPaperScissors.dll
+/home/doddy/c-languages/c-sharp/RockPaperScissors/bin/Debug/net8.0/RockPaperScissors.pdb
+/home/doddy/c-languages/c-sharp/RockPaperScissors/obj/Debug/net8.0/RockPaperScissors.dll
+/home/doddy/c-languages/c-sharp/RockPaperScissors/obj/Debug/net8.0/refint/RockPaperScissors.dll
+/home/doddy/c-languages/c-sharp/RockPaperScissors/obj/Debug/net8.0/RockPaperScissors.pdb
+/home/doddy/c-languages/c-sharp/RockPaperScissors/obj/Debug/net8.0/RockPaperScissors.genruntimeconfig.cache
+/home/doddy/c-languages/c-sharp/RockPaperScissors/obj/Debug/net8.0/ref/RockPaperScissors.dll

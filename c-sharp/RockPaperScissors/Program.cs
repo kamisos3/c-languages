@@ -9,7 +9,7 @@ class Game
     private int playerScore = 0;
     private int computerScore = 0;
 
-    static void Main() new Game().Play();
+    static void Main() => new Game().Play();
 
     void Play()
     {
@@ -25,7 +25,7 @@ class Game
             Choice player = (Choice)(input - 1);
             Choice computer = (Choice)random.Next(3);
 
-            Console.WriteLine($"You: {player} | Computer: {comouter}");
+            Console.WriteLine($"You: {player} | Computer: {computer}");
             DetermineWinner(player, computer);
         }
 
@@ -45,7 +45,7 @@ class Game
         }
         else
         {
-            Console.WriteLine("You loose...")
+            Console.WriteLine("You loose...");
             computerScore++;
         }
     }
