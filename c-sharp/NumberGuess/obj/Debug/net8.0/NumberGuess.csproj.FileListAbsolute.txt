@@ -1,0 +1,15 @@
+/home/doddy/c-languages/c-sharp/NumberGuess/obj/Debug/net8.0/NumberGuess.GeneratedMSBuildEditorConfig.editorconfig
+/home/doddy/c-languages/c-sharp/NumberGuess/obj/Debug/net8.0/NumberGuess.AssemblyInfoInputs.cache
+/home/doddy/c-languages/c-sharp/NumberGuess/obj/Debug/net8.0/NumberGuess.AssemblyInfo.cs
+/home/doddy/c-languages/c-sharp/NumberGuess/obj/Debug/net8.0/NumberGuess.csproj.CoreCompileInputs.cache
+/home/doddy/c-languages/c-sharp/NumberGuess/obj/Debug/net8.0/NumberGuess.sourcelink.json
+/home/doddy/c-languages/c-sharp/NumberGuess/bin/Debug/net8.0/NumberGuess
+/home/doddy/c-languages/c-sharp/NumberGuess/bin/Debug/net8.0/NumberGuess.deps.json
+/home/doddy/c-languages/c-sharp/NumberGuess/bin/Debug/net8.0/NumberGuess.runtimeconfig.json
+/home/doddy/c-languages/c-sharp/NumberGuess/bin/Debug/net8.0/NumberGuess.dll
+/home/doddy/c-languages/c-sharp/NumberGuess/bin/Debug/net8.0/NumberGuess.pdb
+/home/doddy/c-languages/c-sharp/NumberGuess/obj/Debug/net8.0/NumberGuess.dll
+/home/doddy/c-languages/c-sharp/NumberGuess/obj/Debug/net8.0/refint/NumberGuess.dll
+/home/doddy/c-languages/c-sharp/NumberGuess/obj/Debug/net8.0/NumberGuess.pdb
+/home/doddy/c-languages/c-sharp/NumberGuess/obj/Debug/net8.0/NumberGuess.genruntimeconfig.cache
+/home/doddy/c-languages/c-sharp/NumberGuess/obj/Debug/net8.0/ref/NumberGuess.dll
