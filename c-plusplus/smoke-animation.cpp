@@ -48,20 +48,20 @@ public:
 
     void emitParticles() {
         if (particles.size() < maxParticles) {
-            for (int i = 0; i < 5; i++) {
+            for (int i = 0; i < 15; i++) {
                 Particle p;
                 p.position = glm::vec3(0.0f, -0.5f, 0.0f);
 
                 // Disperses randomly
                 float angle = (rand() % 360) * 3.14159f / 180.0f;
-                float speed = 0.5f + (rand() % 100) / 200.0f;
+                float speed = 2.0f + (rand() % 150) / 200.0f;
 
                 p.velocity.x = std::cos(angle) * speed;
                 p.velocity.y = 1.0f;
                 p.velocity.z = std::sin(angle) * speed;
 
-                p.lifetime = 1.0f;
-                p.maxLifetime = 1.0f;
+                p.lifetime = 2.0f;
+                p.maxLifetime = 2.0f;
 
                 particles.push_back(p);
             }
@@ -104,7 +104,7 @@ public:
             glUniformMatrix4fv(modelLoc, 1, GL_FALSE, &model[0][0]);
             glUniform1f(alphaLoc, alpha);
 
-            glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
+            glDrawArrays(GL_POINTS, 0, 1);
         }
     }
 };
@@ -129,6 +129,13 @@ const char* fragmentShaderSource = R"(
     out vec4 FragColor;
 
     void main() {
+        vec2 coord = gl_PointCoord - vec2(0.5);
+        float dist = length(coord);
+
+        if (dist > 0.5)
+            discard;
+
+        float intensity = 1.0 - (dist * dist);
         FragColor = vec4(0.6, 0.2, 0.8, alpha * 0.5);
         // Purple
     }
@@ -155,6 +162,9 @@ GLuint compileShaders() {
 }
 
 int main() {
+    glEnable(GL_PROGRAM_POINT_SIZE);
+    glPointSize(20.0f);
+
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW" << std::endl;
         return -1;
