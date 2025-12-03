@@ -54,14 +54,14 @@ public:
 
                 // Disperses randomly
                 float angle = (rand() % 360) * 3.14159f / 180.0f;
-                float speed = 2.0f + (rand() % 150) / 200.0f;
+                float speed = 0.5f + (rand() % 100) / 200.0f;
 
                 p.velocity.x = std::cos(angle) * speed;
-                p.velocity.y = 1.0f;
+                p.velocity.y = 0.5f + (rand() % 50) / 200.0f;
                 p.velocity.z = std::sin(angle) * speed;
 
-                p.lifetime = 2.0f;
-                p.maxLifetime = 2.0f;
+                p.lifetime = 4.0f;
+                p.maxLifetime = 4.0f;
 
                 particles.push_back(p);
             }
@@ -76,9 +76,9 @@ public:
             it->position += it->velocity * deltaTime;
 
             // Fades
-            it->velocity.y *= 0.98f;
-            it->velocity.x *= 0.99f;
-            it->velocity.z *= 0.99f;
+            it->velocity.y *= 0.995f;
+            it->velocity.x *= 0.997f;
+            it->velocity.z *= 0.997f;
 
             if (it->lifetime <= 0.0f) {
                 it = particles.erase(it);
@@ -163,7 +163,7 @@ GLuint compileShaders() {
 
 int main() {
     glEnable(GL_PROGRAM_POINT_SIZE);
-    glPointSize(20.0f);
+    glPointSize(10.0f);
 
     if (!glfwInit()) {
         std::cerr << "Failed to initialize GLFW" << std::endl;
