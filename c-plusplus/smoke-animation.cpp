@@ -117,7 +117,7 @@ const char* vertexShaderSource = R"(
     uniform mat4 model;
 
     void main() {
-    gl_position = model * vec4(aPos, 1.0);
+    gl_Position = model * vec4(aPos, 1.0);
     }
 )";
 
@@ -171,6 +171,14 @@ int main() {
         return -1;
     }
 
+    glfwMakeContextCurrent(window);
+    glfwSwapInterval(1);
+
+    glewExperimental = GL_TRUE;
+    if (glewInit() != GLEW_OK) {
+        std::cerr << "Failed to initialize GLEW" << std::endl;
+    }
+
     glViewport(0, 0, 800, 600);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
@@ -182,7 +190,7 @@ int main() {
 
     while (!glfwWindowShouldClose(window)) {
         float currentTime = glfwGetTime();
-        float deltaTime = currentTime = lastTime;
+        float deltaTime = currentTime - lastTime;
         lastTime = currentTime;
 
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
